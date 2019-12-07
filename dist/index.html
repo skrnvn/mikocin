@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Default page title</title>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Roboto:500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+<section class="container--home">
+    <div class="home-wrapper">
+        <div class="header">
+            <div class="menu-primary">
+                <div class="social-btns">
+                    <div class="social-btns__fb social-icon">
+                        <a href="https://facebook.com/" target="_blank" title="Facebook"></a>
+                    </div>
+                    <div class="social-btns__pin social-icon">
+                        <a href="https://www.pinterest.com/" target="_blank" title="Pinterest"></a>
+                    </div>
+                    <div class="social-btns__insta social-icon">
+                        <a href="https://www.instagram.com/" target="_blank" title="Instagram"></a>
+                    </div>
+                    <div class="social-btns__twitter social-icon">
+                        <a href="https://twitter.com/" target="_blank" title="Twitter"></a>
+                    </div>
+                    <div class="social-btns__google social-icon">
+                        <a href="https://www.google.com./" target="_blank" title="Google+"></a>
+                    </div>
+                </div>
+                <div class="header-auth">
+                    <button class="header-auth auth__log">Login</button>
+                    <button class="header-auth auth__reg">Register</button>
+                </div>
+                <div class="header-address">
+                    <p>
+                        1835 73rd Ave NE, Medina, Washington, USA.
+                    </p>
+                </div>
+            </div>
+            <div class="menu-secondary">
+                        <div class="top-logo">
+                        </div>
+                        <nav class="top-menu">
+                            <ul>
+                                <li class="top-menu__item"><a href="#">Home</a></li>
+                                <li class="top-menu__item"><a href="#">Tours</a></li>
+                                <li class="top-menu__item"><a href="#">Packages</a></li>
+                                <li class="top-menu__item"><a href="#">Blog</a></li>
+                            </ul>
+                        </nav>
+            </div>
+        </div>
+        <div class="heading-wrapper">
+            <div class="heading-phone">
+                +91 254 587 485
+            </div>
+            <h2 class="heading-title">
+                Book a Ticket & Just Leave!
+            </h2>
+            <p class="heading-text">
+                Travel is the movement of people between relatively distant geographical locations,<br> 
+                and can involve travel by foot,bicycle, automobile, train, boat, bus.
+            </p>
+            <button class="heading-button">
+                ➜ Get ticket
+            </button>
+        </div>
+        <div class="searchform-wrapper">
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Hotel')">Hotel</button>
+                <button class="tablinks" onclick="openTab(event, 'Tours')">Tours</button>
+                <button class="tablinks" onclick="openTab(event, 'Package')">Package</button>
+            </div>
+            
+            <!-- Tab content -->
+            <div id="Hotel" class="tabcontent">
+                <form class="search-wrap" action="">
+                    <label class="search-item" for="search-city">Where?<br>
+                        <input class="search-field" type="text" name="location" placeholder="Choose city" id="search-city">
+                    </label>
+                    <label class="search-item" for="search-hotel">Which?<br>
+                        <input class="search-field" type="text" name="city" placeholder="Choose hotel" id="search-hotel">
+                    </label>
+                    <label class="search-item" for="search-checkin">Check-in<br>
+                        <input class="search-field" type="date" name="checkin" id="search-checkin">
+                    </label>
+                    <label class="search-item" for="search-checkout">Check-out<br>
+                        <input class="search-field" type="date" name="checkout" id="search-checkout">
+                    </label>
+                    <button class="search-btn">Search</button>
+                </form>
+            </div>
+            <div id="Tours" class="tabcontent">
+                <form class="search-wrap" action="">
+                    <label class="search-item" for="search-location">Where?<br>
+                        <input class="search-field" type="text" name="location" placeholder="Choose location" id="search-location">
+                    </label>
+                    <label class="search-item" for="search-city">Which?<br>
+                        <input class="search-field" type="text" name="city" placeholder="Choose city" id="search-city">
+                    </label>
+                    <label class="search-item" for="search-start">Start<br>
+                        <input class="search-field" type="date" name="tour-start" id="search-start">
+                    </label>
+                    <label class="search-item" for="search-end">End<br>
+                        <input class="search-field" type="date" name="tour-end" id="search-end">
+                    </label>
+                    <button class="search-btn">Search</button>
+                </form>
+            </div>
+            <div id="Package" class="tabcontent">
+                <form class="search-wrap" action="">
+                    <label class="search-item" for="search-location">Where?<br>
+                        <input class="search-field" type="text" name="location" placeholder="Choose location" id="search-location">
+                    </label>
+                    <label class="search-item" for="search-city">Which?<br>
+                        <input class="search-field" type="text" name="city" placeholder="Choose city" id="search-city">
+                    </label>
+                    <label class="search-item" for="search-checkin">Check-in<br>
+                        <input class="search-field" type="date" name="checkin" id="search-checkin">
+                    </label>
+                    <label class="search-item" for="search-checkout">Check-out<br>
+                        <input class="search-field" type="date" name="checkout" id="search-checkout">
+                    </label>
+                    <button class="search-btn">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container">
+    <div class="tours-wrapper">
+        <div class="popular-place-wrapper">
+            <h2 class="section-title">
+                Popular place
+            </h2>
+            <div id="popular-slider" class="popular-slider">
+                <figure class="popular-slide">
+                    <img class="popular-slide__img" src="./assets/img/popular-slide-1.jpg" alt="dorou">
+                    <figcaption class="popular-slide__info">
+                        <div class="pop-info-wrap">
+                            <p class="pop-info-price">
+                                $500 2 days 2 night
+                            </p>
+                            <h3 class="pop-info-title">Mancity, England</h3>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="popular-slide">
+                    <img class="popular-slide__img" src="./assets/img/popular-slide-2.jpg" alt="">
+                    <figcaption class="popular-slide__info">
+                        <div class="pop-info-wrap">
+                            <p class="pop-info-price">
+                                $500 2 days 2 night
+                            </p>
+                            <h3 class="pop-info-title">Mancity, England</h3>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="popular-slide">
+                    <img class="popular-slide__img" src="./assets/img/popular-slide-3.jpg" alt="">
+                    <figcaption class="popular-slide__info">
+                        <div class="pop-info-wrap">
+                            <p class="pop-info-price">
+                                $500 2 days 2 night
+                            </p>
+                            <h3 class="pop-info-title">Mancity, England</h3>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="popular-slide">
+                    <img class="popular-slide__img" src="./assets/img/popular-slide-1.jpg" alt="dorou">
+                    <figcaption class="popular-slide__info">
+                        <div class="pop-info-wrap">
+                            <p class="pop-info-price">
+                                $500 2 days 2 night
+                            </p>
+                            <h3 class="pop-info-title">Mancity, England</h3>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="popular-slide">
+                    <img class="popular-slide__img" src="./assets/img/popular-slide-2.jpg" alt="">
+                    <figcaption class="popular-slide__info">
+                        <div class="pop-info-wrap">
+                            <p class="pop-info-price">
+                                $500 2 days 2 night
+                            </p>
+                            <h3 class="pop-info-title">Mancity, England</h3>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="popular-slide">
+                    <img class="popular-slide__img" src="./assets/img/popular-slide-3.jpg" alt="">
+                    <figcaption class="popular-slide__info">
+                        <div class="pop-info-wrap">
+                            <p class="pop-info-price">
+                                $500 2 days 2 night
+                            </p>
+                            <h3 class="pop-info-title">Mancity, England</h3>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="popular-slide">
+                    <img class="popular-slide__img" src="./assets/img/popular-slide-1.jpg" alt="dorou">
+                    <figcaption class="popular-slide__info">
+                        <div class="pop-info-wrap">
+                            <p class="pop-info-price">
+                                $500 2 days 2 night
+                            </p>
+                            <h3 class="pop-info-title">Mancity, England</h3>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="popular-slide">
+                    <img class="popular-slide__img" src="./assets/img/popular-slide-2.jpg" alt="">
+                    <figcaption class="popular-slide__info">
+                        <div class="pop-info-wrap">
+                            <p class="pop-info-price">
+                                $500 2 days 2 night
+                            </p>
+                            <h3 class="pop-info-title">Mancity, England</h3>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="popular-slide">
+                    <img class="popular-slide__img" src="./assets/img/popular-slide-3.jpg" alt="">
+                    <figcaption class="popular-slide__info">
+                        <div class="pop-info-wrap">
+                            <p class="pop-info-price">
+                                $500 2 days 2 night
+                            </p>
+                            <h3 class="pop-info-title">Mancity, England</h3>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="popular-destinations-wrapper">
+            <h2 class="wrap-title">
+                Most Popular Travel Destinations
+            </h2>
+            <p class="wrap-text">
+                Love travel? Plan and book your perfect trip with expert advice, travel tips, destination <br> 
+                information and inspiration from Lonely Planet
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="container dest-slider-wrap">
+    <figure class="destinations-slider">
+        <img class="destinations-slider__img" src="/assets/img/destinations-slide.jpg" alt="">
+        <figcaption class="destinations-slider__sidebar">
+            <h3 class="slider-heading">
+                Grand Switzerland
+            </h3>
+            <ul class="sidebar-large">
+                <li class="sidebar-item sidebar-large__view"></li>
+                <li class="sidebar-item sidebar-large__like"></li>
+                <li class="sidebar-item sidebar-large__comment"></li>
+                <li class="sidebar-item sidebar-large__share"></li>
+                <li class="sidebar-item sidebar-large__video"></li>
+            </ul>                
+        </figcaption>
+    </figure>
+</section>
+
+<section class="container honeymoon-destinations-wrapper">
+        <h2 class="wrap-title">
+                Destinations for Honeymoon
+        </h2>
+        <p class="wrap-text">
+                Love travel? Plan and book your perfect trip with expert advice, travel tips, destination <br> 
+                information and inspiration from Lonely Planet
+        </p>
+        <div class="honeymoon-slider-wrapper">
+            <figure class="honeymoon-slide">
+                <img class="honeymoon-slide__img" src="../assets/img/honeymoon-slide-1.jpg" alt="">
+                <figcaption class="honeymoon-slide__text">
+                    <h3 class="slider-heading">
+                        Switzerland
+                    </h3>
+                    <p class="slider-price">
+                        $560
+                    </p>
+                    <p>                      
+                        2 days 2 night
+                    </p>
+                    <p>
+                        There are a few very, very <br> 
+                        fine strands of PLA
+                    </p>                    
+                    <div class="slider-rate">
+                    </div>
+                    <button class="slider-btn">
+                        More Details                    
+                    </button>
+                    <div class="sidebar-small">
+                        <ul>
+                            <li class="sidebar-small__share"></li>
+                            <li class="sidebar-small__like"></li>
+                            <li class="sidebar-small__comment"></li>                            
+                        </ul>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="honeymoon-slide">
+                <img class="honeymoon-slide__img" src="../assets/img/honeymoon-slide-2.jpg" alt="">
+                <figcaption class="honeymoon-slide__text">
+                    <h3 class="slider-heading">
+                        Switzerland
+                    </h3>
+                    <p class="slider-price">
+                        $560
+                    </p>
+                    <p>                      
+                        2 days 2 night
+                    </p>
+                    <p>
+                        There are a few very, very <br> 
+                        fine strands of PLA
+                    </p>                    
+                    <div class="slider-rate">
+                    </div>
+                    <button class="slider-btn">
+                        More Details                    
+                    </button>
+                    <div class="sidebar-small">
+                        <ul>
+                            <li class="sidebar-small__share"></li>
+                            <li class="sidebar-small__like"></li>
+                            <li class="sidebar-small__comment"></li>                            
+                        </ul>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="honeymoon-slide">
+                <img class="honeymoon-slide__img" src="../assets/img/honeymoon-slide-3.jpg" alt="">
+                <figcaption class="honeymoon-slide__text">
+                    <h3 class="slider-heading">
+                        Switzerland
+                    </h3>
+                    <p class="slider-price">
+                        $560
+                    </p>
+                    <p>                      
+                        2 days 2 night
+                    </p>
+                    <p>
+                        There are a few very, very <br> 
+                        fine strands of PLA
+                    </p>                    
+                    <div class="slider-rate">
+                    </div>
+                    <button class="slider-btn">
+                        More Details                    
+                    </button>
+                    <div class="sidebar-small">
+                        <ul>
+                            <li class="sidebar-small__share"></li>
+                            <li class="sidebar-small__like"></li>
+                            <li class="sidebar-small__comment"></li>                            
+                        </ul>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+</section> 
+<section class="container--packages">
+    <div class="best-packages packages-wrap">
+        <div class="best-packages__text">
+            <p class="pack-discount">
+            50% off discount
+            </p>
+            <h2 class="pack-title">
+                Best Holiday Packages
+            </h2>
+            <p class="pack-text">
+                Find your ideal holiday package whether you're travelling in <br> 
+                Australia or around the World. Book Flights & Accommodation <br> 
+                packages in one place with Escape Travel.
+            </p>
+            <button class="pack-btn">
+                Read more
+            </button>
+        </div>
+        <div class="best-packages__img">
+            <img src="../assets/img/best-packages-img.jpg" alt="">
+        </div>
+    </div>
+</section>
+<section class="container--discount">
+    <div class="discount-wrapper">
+        <h2 class="wrap-title">
+            30% Discount, stock limited
+        </h2>
+        <p class="wrap-text">
+            The world's largest student and youth travel agency. Find cheap flights, tours, Spring Break packages <br> 
+            and exclusive travel deals for studentsTake full advantage of privileged discount rates.
+        </p>
+        <button class="disc-btn">
+            ➜ Get ticket
+        </button>
+        <div class="discount-counter">
+            <div class="discount-counter__days count-item">
+                <h4 class="count-item__number">
+                    364
+                </h4>
+                <p>
+                    Days
+                </p>
+            </div>
+            <div class="discount-counter__hours count-item">
+                <h4 class="count-item__number">
+                    23
+                </h4>
+                <p>
+                    Hours
+                </p>
+            </div>
+            <div class="discount-counter__minutes count-item">
+                <h4 class="count-item__number">
+                    59
+                </h4>
+                <p>
+                    Minutes
+                </p>
+            </div>
+            <div class="discount-counter__seconds count-item">
+                <h4 class="count-item__number">
+                    59
+                </h4>
+                <p>
+                    Seconds
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container--offer">
+    <div class="big-deal-wrapper">
+        <h2 class="big-deal__heading">
+            It’s a big deal!
+        </h2>
+        <p class="big-deal__text">
+            Subscribe our news letter
+        </p>
+        <form action="" class="big-deal__form">
+            <input type="email" name="user-email" placeholder="Enter your email">
+            <button type="submit">Submit</button>
+        </form>
+        <div class="big-deal__prewiev">
+            <img src="../assets/img/big-deal-img.jpg" alt="">
+        </div>
+    </div>
+</section>
+<section class="container--blog">
+    <div class="blog-wrapper">
+        <div class="blog-post">
+            <img class="blog-post__img" src="../assets/img/blog-post-1.jpg" alt="">
+            <div class="blog-post__desc">
+                <time class="blog-info">29 February</time>
+                <span class="blog-info">
+                    by admin
+                </span>
+                <h3 class="blog-title">
+                    Here's how to get the most out <br>
+                    of a Liverpool city!
+                </h3>
+                <p class="blog-text">
+                    Travel is the movement of people between <br> 
+                    relatively distant geographical locations, and <br> 
+                    can involve travel by foot.
+                </p>
+                <div class="sidebar-small">
+                    <ul>
+                        <li class="sidebar-item sidebar-small__comment"></li>
+                        <li class="sidebar-item sidebar-small__like"></li>
+                        <li class="sidebar-item sidebar-small__share"></li>
+                    </ul>                
+                </div>
+            </div>
+        </div>
+        <div class="blog-post">
+            <img class="blog-post__img" src="../assets/img/blog-post-2.jpg" alt="">
+            <div class="blog-post__desc">
+                <time class="blog-info">29 February</time>
+                <span class="blog-info">                    
+                    by admin
+                </span>
+                <h3 class="blog-title">
+                    Why Travel is Important If you've <br>
+                    grown up with all the comforts ?                
+                </h3>
+                <p class="blog-text">
+                    Travel is the movement of people between <br> 
+                    relatively distant geographical locations, and <br> 
+                    can involve travel by foot.
+                </p>
+                <div class="sidebar-small">
+                    <ul>
+                        <li class="sidebar-item sidebar-small__comment"></li>
+                        <li class="sidebar-item sidebar-small__like"></li>
+                        <li class="sidebar-item sidebar-small__share"></li>
+                    </ul>                
+                </div>
+            </div>
+        </div>
+        <div class="blog-post">
+            <img class="blog-post__img" src="../assets/img/blog-post-3.jpg" alt="">
+            <div class="blog-post__desc">
+                <time class="blog-info">29 February</time>
+                <span class="blog-info">                    
+                    by admin
+                </span>
+                <h3 class="blog-title">
+                    Travelling, for me, is same as <br>
+                    reading books.                
+                </h3>
+                <p class="blog-text">
+                    Travel is the movement of people between <br> 
+                    relatively distant geographical locations, and <br> 
+                    can involve travel by foot.
+                </p>
+                <div class="sidebar-small">
+                    <ul>
+                        <li class="sidebar-item sidebar-small__comment"></li>
+                        <li class="sidebar-item sidebar-small__like"></li>
+                        <li class="sidebar-item sidebar-small__share"></li>
+                    </ul>                
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container--footer">
+    <div class="footer-wrapper">
+        <div class="footer-wrapper-main">
+            <div class="footer-contacts ftr-block">
+                <div class="contacts__logo">
+                    <img src="../assets/img/icons/top-logo.png" alt="">
+                </div>
+                <ul class="contacts-wrap">
+                <li class="contacts__phone">
+                    Phone: +91 254 541 254
+                </li>
+                <li class="contacts__fax">
+                    Fax : +44 161 999 8888
+                </li>
+                <li class="contacts__email">
+                    Email: dreamland@dream.com
+                </li>
+                </ul>
+                <div class="social-btns">
+                    <div class="social-btns__fb social-icon">
+                        <a href="https://facebook.com/" target="_blank" title="Facebook"></a>
+                    </div>
+                    <div class="social-btns__pin social-icon">
+                        <a href="https://www.pinterest.com/" target="_blank" title="Pinterest"></a>
+                    </div>
+                    <div class="social-btns__insta social-icon">
+                        <a href="https://www.instagram.com/" target="_blank" title="Instagram"></a>
+                    </div>
+                    <div class="social-btns__twitter social-icon">
+                        <a href="https://twitter.com/" target="_blank" title="Twitter"></a>
+                    </div>
+                    <div class="social-btns__google social-icon">
+                        <a href="https://www.google.com./" target="_blank" title="Google+"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-support ftr-block">
+                <h2 class="footer-heading">
+                    Support
+                </h2>
+                <ul class="footer-text">
+                    <li><a href="#">Email Contact</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Live chat</a></li>
+                    <li><a href="#">Our Community</a></li>
+                    <li><a href="#">Services Status</a></li>
+                </ul>
+            </div>
+            <div class="footer-location ftr-block">
+                <h2 class="footer-heading">
+                    Location
+                </h2>
+                <ul class="footer-text">
+                    <li><a href="#">London</a></li>
+                    <li><a href="#">Canada</a></li>
+                    <li><a href="#">America</a></li>
+                    <li><a href="#">India</a></li>
+                    <li><a href="#">Australia</a></li>
+                    </ul>
+            </div>
+            <div class="footer-menu ftr-block">
+                <h2 class="footer-heading">
+                    Menu
+                </h2>
+                <nav class="bottom-menu">
+                    <ul class="footer-text">
+                        <li class="bottom-menu__item"><a href="#">Home</a></li>
+                        <li class="bottom-menu__item"><a href="#">Tours</a></li>
+                        <li class="bottom-menu__item"><a href="#">Packages</a></li>
+                        <li class="bottom-menu__item"><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-wrapper-bottom">
+            <div class="copyright">
+                @ 2018 Roy Design. All Rights Reserved 
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li class="footer-nav__item"><a href="">About Hoststar</a></li>
+                    <li class="footer-nav__item"><a href="">Privacy Policy</a></li>
+                    <li class="footer-nav__item"><a href="">Help Center</a></li>
+                    <li class="footer-nav__item"><a href="">Terms</a></li>
+                    <li class="footer-nav__item"><a href="">Site Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+<script src="/assets/js/index.js"></script>
+</body>
+</html>
