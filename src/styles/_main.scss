@@ -22,13 +22,39 @@ body {
         background-image: linear-gradient(to left, #e9f5f7 0%, #e9f5f7 1%, #f8fdfe 51%, #e9f5f7 100%);
     }
 
+    &--three {
+        background-color: #ffffff;
+    }
+
+    &--four {
+        background-color: #f0f8f8;
+    }
+
+    &__accent {
+        color: #fa4f01;        
+    }
+
     &__content {
         display: flex;
         justify-content: space-between;
+
+        &--section-two {
+            margin-top: 80px;
+        }
+
+        &--section-three {
+            margin-top: 90px;
+        }
     }
 
     &__footer {
         margin: 75px 0;
+        padding: 45px 90px;
+        border: 3px solid #f4d3bb;
+
+        &--section-two {
+            padding: 30px 95px; 
+        }
     }
 
     &__title {
@@ -36,7 +62,19 @@ body {
         font-size: 48px;
         font-weight: 900;
         line-height: 48px;
-        padding: 25px 0 35px;        
+        padding: 25px 0 35px;
+        
+        &--footer {
+            color: #000000;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 28px;
+            text-transform: uppercase;
+            position: absolute;
+            top: -35px;
+            left: 47%; 
+            z-index: 1;           
+        }
     }
 
     &__sub-title {
@@ -56,14 +94,17 @@ body {
 
 .section-footer {
     position: relative;
+    border-radius: 10px;
 
     &__desc {
         color: #444444;
         font-size: 22px;
         font-weight: 400;
-        padding: 45px 90px;
-        border: 3px solid #f4d3bb;
-        border-radius: 10px;
+
+        &--section-two {
+            font-size: 21px;
+            line-height: 28px;           
+        }
     }
 
     &__img {
@@ -73,23 +114,156 @@ body {
         top: -20px;
         left: 500px;
     }
+
+    &__accent {
+        color: #f4d3bb;
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 28px;
+        z-index: 0; 
+        position: absolute;
+        top: -10px;
+        left: 43%;
+        padding: 0 80px;
+        background-color: #f7fcfe;       
+    }
 }
 
 .card {
     width: 330px;
 
-    &--section-two {
-        width: 370px;
-    }
-
     &--section-one {
         margin-top: 25px;
     }
 
-    &__heading {
+    &--section-two {
+        width: 370px;
+        box-shadow: 0 0 15px rgba(37, 83, 129, 0.08);
+        background-color: #ffffff;
+        border-top: 5px solid #a8c53a;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    &--section-three {
+        border: 4px solid #f64d01;
+        background-color: #ffffff;
+        position: relative;
+        border-radius: 10px;
+
+        &::before {
+            width: 100px;
+            height: 100px;
+            content: '';
+            position: absolute;
+            background-color: #ffffff;
+            border-left: 4px solid #f64d01;
+            border-bottom: 4px solid #f64d01;
+            border-radius: 100%;
+            border-top: 4px solid transparent;
+            border-right: 4px solid transparent;
+            top: -54px;
+            left: 35%;
+            margin: -4px;
+            transform: rotate(-45deg);
+        }
+
+        &:nth-child(2) {
+            border-color: #f64d01;
+
+            &::before {
+                border-left: 4px solid #f64d01;
+                border-bottom: 4px solid #f64d01;
+            }
+        }
+
+        &:nth-child(3) {
+            border-color: #62bd1f;
+
+            &::before {
+                border-left: 4px solid #62bd1f;
+                border-bottom: 4px solid #62bd1f;
+            }
+        }
+    }
+
+    &__icon {
+        z-index: 1;
+        width: 75px;
+        height: 75px;
         display: flex;
-        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        border-radius: 100%;
+        position: absolute;
+        bottom: 93%;
+        left: 35%;
+
+        &--first {
+            background-color: #f5fbfd;
+        }
+
+        &--second {
+            background-color: #f8fdfe;
+        }
+
+        &--third {
+            background-color: #f3fafb;
+        }
+
+        &--section-three {
+            bottom: 90%;
+        }
+    }
+
+    &__heading {
         padding-bottom: 30px;
+
+        &--section-one {
+            display: flex;
+            align-items: center;
+        }
+
+        &--section-two {
+            padding: 65px 0 30px;
+            margin: 0 20px;
+            border-bottom: 1px solid #d2dce6;
+            position: relative;
+
+            &::after {
+                top: 100%;
+                left: 50%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+                border-color: rgba(255, 255, 255, 0);
+                border-top-color: #ffffff;
+                border-width: 10px;
+                margin-left: -10px;
+            }
+            
+            &::before {
+                top: 100%;
+                left: 50%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+                border-color: rgba(210, 220, 230, 0);
+                border-top-color: #d2dce6;
+                border-width: 11px;
+                margin-left: -11px;             
+            }
+        }
+
+        &--section-three {
+            padding: 85px 0 0;
+        }
     }
 
     &__title {
@@ -98,9 +272,29 @@ body {
         font-weight: 500;
         line-height: 26px;
         text-align: center;
+
+        &--section-two {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px;            
+        }
         
         &--left {
             text-align: left;
+        }
+    }
+
+    &__sub-title {
+        color: #222222;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        
+        &--light {
+            color: #666666;
+            font-size: 16px;
+            font-style: italic;
+            line-height: 28px;            
         }
     }
 
@@ -185,6 +379,14 @@ body {
             height: 3px;
             background-color: #becbd8;
         }
+
+        &--section-two {
+            padding: 25px 35px 35px;
+        }
+
+        &--section-three {
+            padding: 0 18px 35px;
+        }
     }
 
     &__desc {
@@ -197,5 +399,12 @@ body {
         &--left {
             text-align: left;
         }
+    }
+
+    &__accent {
+        color: #ff6b00;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 26px;        
     }
 }
