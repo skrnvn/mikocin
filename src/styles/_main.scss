@@ -30,6 +30,11 @@ body {
         background-color: #f0f8f8;
     }
 
+    &__desc {
+        display: flex;
+        flex-direction: column;
+    }
+
     &__accent {
         color: #fa4f01;        
     }
@@ -44,6 +49,11 @@ body {
 
         &--section-three {
             margin-top: 90px;
+        }
+
+        &--section-four {
+            justify-content: center;
+            align-items: center;
         }
     }
 
@@ -406,5 +416,56 @@ body {
         font-size: 24px;
         font-weight: 900;
         line-height: 26px;        
+    }
+}
+
+.instructions {
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
+
+    &__desc {
+        text-align: left;
+        width: 220px;
+        padding-left: 20px;
+        color: #000000;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        
+        &::before {
+            content: '';
+            display: block;
+            width: 20px;
+            border-top: 3px solid #7bbf1c;
+            padding-top: 20px;         
+        }
+    }
+
+    &__img {
+        width: 90px;
+        height: 90px;
+        padding: 10px;
+        border: 8px solid #e5d0b9;
+        background-color: #ffffff;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        &::before {
+            content: '';
+            border: 7px solid #f64d01;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            
+        }
     }
 }
